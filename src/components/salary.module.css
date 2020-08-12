@@ -1,0 +1,28 @@
+.containerReadOnly {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+body {
+  padding: 30px;
+}
+
+.inputReadOnlyItem {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.inputItem {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+}
+
+.inputSalary {
+  margin-left: 10px;
+  width: 85%;
+}
