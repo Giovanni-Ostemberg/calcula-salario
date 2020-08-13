@@ -16,13 +16,46 @@ body {
   margin: 10px;
 }
 
+.label {
+  vertical-align: middle;
+}
+
+.title {
+  justify-content: center;
+  text-align: center;
+  background-color: #16a085;
+
+  color: white;
+}
+
 .inputItem {
-  display: flex;
-  flex-direction: row;
   padding-left: 20px;
 }
 
 .inputSalary {
   margin-left: 10px;
   width: 85%;
+}
+
+.progressBar {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.inssBar {
+  background-color: #e67e22;
+}
+
+.irpfBar {
+  background-color: #c0392b;
+}
+
+.restBar {
+  background-color: #16a085;
+}
+
+.input2 {
+  color: #e67e22;
 }
