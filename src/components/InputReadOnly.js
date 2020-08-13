@@ -12,7 +12,7 @@ export default class InputReadOnly extends Component {
   }
 
   render() {
-    const { salary, taxes, liquidSalary } = this.props;
+    const { salary, taxes } = this.props;
 
     return (
       <div>

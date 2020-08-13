@@ -11,7 +11,6 @@ export default class InputReadOnlyItem extends Component {
 
   render() {
     const { description, salary, id, taxes } = this.props;
-    // const { taxes } = this.state;
 
     const numberFormat = new Intl.NumberFormat("pt-BR", {
       style: "currency",
@@ -23,7 +22,6 @@ export default class InputReadOnlyItem extends Component {
       maximumSignificantDigits: 4,
     });
 
-    let formatedSalary = numberFormat.format(salary);
     let formatedTaxes = numberFormat.format(taxes);
 
     console.log(id === 1);
@@ -31,16 +29,7 @@ export default class InputReadOnlyItem extends Component {
     return (
       <div className={css.inputReadOnlyItem}>
         <label className={css.label}>{description}</label>
-        {/* <input
-          type="hidden"
-          id={id + "_hidden"}
-          value={
-            "R$ " + salary === taxes
-              ? salary + "(" + (taxes / salary) * 100 + "%)"
-              : taxes
-          }
-          onChange={this.handleCalc}
-        /> */}
+
         <input
           className={M.materializeTextarea}
           disabled
